@@ -1,0 +1,149 @@
+:root {
+  --ink: #17324d;
+  --blue: #dff5fb;
+  --blue-deep: #72c6dd;
+  --sun: #ffd85a;
+  --leaf: #5ea88f;
+  --cream: #fffaf1;
+  --coral: #f5a38d;
+  --surface: #ffffff;
+  --surface-soft: rgba(255, 255, 255, 0.82);
+  --text-muted: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "DM Sans", sans-serif;
+  color: var(--ink);
+  overflow-x: hidden;
+  background: radial-gradient(circle at top left, rgba(79, 189, 255, 0.14), transparent 28%),
+    linear-gradient(180deg, #f3f9ff 0%, #eef7fb 47%, #f8fbff 100%);
+}
+
+.canva-header {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(14px);
+}
+
+.canva-button {
+  background: #17324d;
+  color: white;
+  box-shadow: 0 16px 40px rgba(23, 50, 77, 0.12);
+}
+
+.canva-button.border {
+  background: transparent;
+  color: #17324d;
+  border: 1px solid rgba(23, 50, 77, 0.12);
+}
+
+.canva-link {
+  color: #17324d;
+}
+
+.canva-banner,
+.canva-panel,
+.canva-card {
+  background: var(--surface-soft);
+}
+
+.canva-panel {
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.canva-card {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.canva-tag {
+  background: rgba(59, 130, 246, 0.08);
+  color: #1d4ed8;
+}
+
+.script-font {
+  font-family: "Playball", cursive;
+}
+
+.soft-shadow {
+  box-shadow: 0 22px 60px rgba(50, 98, 120, 0.14);
+}
+
+.hero-blob {
+  border-radius: 34% 66% 54% 46% / 44% 40% 60% 56%;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature-card {
+  transition: transform 0.28s ease, box-shadow 0.28s ease, background-color 0.28s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(45, 100, 119, 0.12);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 0;
+  background: #17324d;
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.floating-card {
+  animation: floaty 5s ease-in-out infinite;
+}
+
+.floating-card.delay {
+  animation-delay: 1s;
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.dot-grid {
+  background-image: radial-gradient(rgba(23, 50, 77, 0.16) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.focusable:focus-visible {
+  outline: 3px solid #17324d;
+  outline-offset: 3px;
+}

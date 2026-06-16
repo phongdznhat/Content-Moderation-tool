@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Công Cụ Hạn chế Toxic Trên Không Gian Mạng</title>
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playball&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body data-template-id="__page-root" class="w-full">
+    <header
+      data-template-id="top-header"
+      class="canva-header sticky top-0 z-50 backdrop-blur-md border-b border-white/60"
+    >
+      <div
+        class="w-full max-w-7xl mx-auto px-5 md:px-8 py-4 flex items-center justify-between"
+      >
+        <a href="#home" class="flex items-center gap-3 focusable">
+          <div
+            data-template-id="brand-mark"
+            class="canva-container w-10 h-10 rounded-full flex items-center justify-center"
+          >
+            <i data-lucide="shield" class="w-5 h-5"></i>
+          </div>
+          <span
+            data-template-id="brand-name"
+            class="canva-text font-semibold tracking-tight hidden sm:inline"
+            >CyberGuard</span
+          >
+        </a>
+        <nav
+          class="hidden md:flex items-center gap-8 text-sm font-medium"
+          aria-label="Điều hướng chính"
+        >
+          <a
+            data-template-id="nav-home"
+            href="#home"
+            class="canva-link nav-link focusable"
+            >Trang chủ</a
+          >
+          <a
+            data-template-id="nav-features"
+            href="#features"
+            class="canva-link nav-link focusable"
+            >Tính năng</a
+          >
+          <a
+            data-template-id="nav-community"
+            href="#community"
+            class="canva-link nav-link focusable"
+            >Cộng đồng</a
+          >
+        </nav>
+        <a
+          data-template-id="header-download-button"
+          href="#download"
+          class="canva-button focusable inline-flex items-center gap-2 px-5 py-3 rounded-full font-semibold transition hover:-translate-y-0.5"
+        >
+          <span>Tải ngay</span>
+          <i data-lucide="download" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section id="home" class="relative overflow-hidden">
+        <div
+          class="absolute inset-0 opacity-40 dot-grid pointer-events-none"
+        ></div>
+        <div
+          class="w-full max-w-7xl mx-auto px-5 md:px-8 pt-14 md:pt-20 pb-16 md:pb-24 relative"
+        >
+          <div
+            class="grid lg:grid-cols-[1.02fr_.98fr] gap-12 lg:gap-16 items-center"
+          >
+            <div class="reveal">
+              <div
+                data-template-id="hero-eyebrow"
+                class="canva-tag inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold mb-6"
+              >
+                <i data-lucide="sparkles" class="w-4 h-4"></i>
+                <span>Bảo mật không gian mạng</span>
+              </div>
+              <h1
+                data-template-id="hero-title"
+                class="canva-text script-font leading-[1.05] mb-5 max-w-3xl text-5xl sm:text-6xl"
+              >
+                Cùng nhau giữ an toàn cho thế giới số
+              </h1>
+              <p
+                data-template-id="hero-subtitle"
+                class="canva-text max-w-2xl leading-8 mb-8 text-lg text-slate-700"
+              >
+                CyberGuard mang đến giải pháp bảo mật dễ sử dụng, giám sát liên
+                tục và cảnh báo kịp thời để mỗi người dùng đều an tâm khi lướt
+                web.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 mb-10">
+                <a
+                  data-template-id="primary-cta"
+                  href="#download"
+                  class="canva-button focusable inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full font-semibold transition hover:-translate-y-1"
+                >
+                  <span>Bắt đầu</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a
+                  data-template-id="secondary-cta"
+                  href="#features"
+                  class="canva-button focusable inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full font-semibold border transition hover:-translate-y-1"
+                >
+                  <i data-lucide="play-circle" class="w-4 h-4"></i>
+                  <span>Khám phá</span>
+                </a>
+              </div>
+              <div class="grid grid-cols-3 gap-5 max-w-xl">
+                <div>
+                  <p
+                    data-template-id="stat-one-number"
+                    class="canva-text font-bold text-2xl text-slate-900"
+                  >
+                    24/7
+                  </p>
+                  <p
+                    data-template-id="stat-one-label"
+                    class="canva-text mt-1 text-slate-600"
+                  >
+                    Giám sát liên tục
+                  </p>
+                </div>
+                <div>
+                  <p
+                    data-template-id="stat-two-number"
+                    class="canva-text font-bold text-2xl text-slate-900"
+                  >
+                    1M+
+                  </p>
+                  <p
+                    data-template-id="stat-two-label"
+                    class="canva-text mt-1 text-slate-600"
+                  >
+                    Người dùng tin cậy
+                  </p>
+                </div>
+                <div>
+                  <p
+                    data-template-id="stat-three-number"
+                    class="canva-text font-bold text-2xl text-slate-900"
+                  >
+                    98%
+                  </p>
+                  <p
+                    data-template-id="stat-three-label"
+                    class="canva-text mt-1 text-slate-600"
+                  >
+                    Mức độ bảo mật cao
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="relative reveal" style="transition-delay: 0.12s">
+              <div
+                class="absolute -top-8 -right-5 w-28 h-28 rounded-full bg-[#ffd85a] opacity-80 blur-sm"
+              ></div>
+              <div
+                class="absolute -bottom-8 -left-6 w-20 h-20 rounded-full bg-[#9bd5c6] opacity-80 blur-sm"
+              ></div>
+              <div
+                class="relative hero-blob overflow-hidden soft-shadow bg-gradient-to-br from-slate-100 to-sky-100"
+              >
+                <img
+                  data-template-id="hero-image"
+                  src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=80"
+                  alt="Bảo mật mạng"
+                  loading="lazy"
+                  class="canva-image w-full h-[520px] md:h-[620px] object-cover"
+                />
+              </div>
+              <div
+                data-template-id="hero-badge-one"
+                class="canva-card floating-card absolute left-0 md:-left-8 top-16 bg-white/95 backdrop-blur px-4 py-3 rounded-2xl shadow-lg flex items-center gap-3"
+              >
+                <div
+                  class="w-9 h-9 rounded-full bg-[#e6f7f3] flex items-center justify-center text-[#3c8c74]"
+                >
+                  <i data-lucide="heart" class="w-4 h-4"></i>
+                </div>
+                <span
+                  data-template-id="hero-badge-one-text"
+                  class="canva-text text-sm font-semibold"
+                  >Giám sát an toàn</span
+                >
+              </div>
+              <div
+                data-template-id="hero-badge-two"
+                class="canva-card floating-card delay absolute right-0 md:-right-6 bottom-16 bg-white/95 backdrop-blur px-4 py-3 rounded-2xl shadow-lg flex items-center gap-3"
+              >
+                <div
+                  class="w-9 h-9 rounded-full bg-[#fff3cb] flex items-center justify-center text-[#ad7a00]"
+                >
+                  <i data-lucide="smile" class="w-4 h-4"></i>
+                </div>
+                <span
+                  data-template-id="hero-badge-two-text"
+                  class="canva-text text-sm font-semibold"
+                  >Trải nghiệm thân thiện</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-full px-5 md:px-8 -mt-2 mb-6">
+        <div
+          data-template-id="quote-strip"
+          class="canva-banner max-w-6xl mx-auto rounded-[2rem] px-6 md:px-10 py-7 text-center reveal"
+        >
+          <p
+            data-template-id="quote-text"
+            class="canva-text script-font text-xl text-slate-900"
+          >
+            "An toàn trên mạng bắt đầu từ mỗi chúng ta."
+          </p>
+        </div>
+      </section>
+      <section
+        id="features"
+        class="w-full max-w-7xl mx-auto px-5 md:px-8 py-20 md:py-28"
+      >
+        <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+          <p
+            data-template-id="features-eyebrow"
+            class="canva-text uppercase tracking-[.2em] font-semibold mb-3 text-slate-600"
+          >
+            Tính năng nổi bật
+          </p>
+          <h2
+            data-template-id="features-title"
+            class="canva-text script-font mb-4 text-4xl text-slate-900"
+          >
+            Giải pháp toàn diện cho an toàn số
+          </h2>
+          <p
+            data-template-id="features-subtitle"
+            class="canva-text leading-8 text-slate-600"
+          >
+            CyberGuard giúp phát hiện mối đe dọa, bảo vệ dữ liệu và kết nối cộng
+            đồng người dùng để bảo vệ mạng hiệu quả hơn.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <article
+            data-template-id="feature-card-one"
+            class="canva-card feature-card rounded-[1.75rem] p-7 reveal bg-white/90 shadow-lg"
+          >
+            <div
+              data-template-id="feature-icon-one"
+              class="canva-container w-14 h-14 rounded-2xl flex items-center justify-center mb-7 bg-sky-100 text-sky-700"
+            >
+              <i data-lucide="scan-eye" class="w-6 h-6"></i>
+            </div>
+            <p
+              data-template-id="feature-number-one"
+              class="canva-text text-sm font-semibold mb-3 text-slate-500"
+            >
+              1. Phát hiện mối đe dọa
+            </p>
+            <h3
+              data-template-id="feature-title-one"
+              class="canva-text font-bold mb-3 text-slate-900"
+            >
+              Cảnh báo thông minh
+            </h3>
+            <p
+              data-template-id="feature-copy-one"
+              class="canva-text leading-7 text-slate-600"
+            >
+              Phát hiện và ngăn chặn các nguy cơ tấn công ngay khi chúng phát
+              sinh.
+            </p>
+          </article>
+          <article
+            data-template-id="feature-card-two"
+            class="canva-card feature-card rounded-[1.75rem] p-7 reveal bg-white/90 shadow-lg"
+            style="transition-delay: 0.12s"
+          >
+            <div
+              data-template-id="feature-icon-two"
+              class="canva-container w-14 h-14 rounded-2xl flex items-center justify-center mb-7 bg-emerald-100 text-emerald-700"
+            >
+              <i data-lucide="shield-check" class="w-6 h-6"></i>
+            </div>
+            <p
+              data-template-id="feature-number-two"
+              class="canva-text text-sm font-semibold mb-3 text-slate-500"
+            >
+              2. Bảo vệ dữ liệu
+            </p>
+            <h3
+              data-template-id="feature-title-two"
+              class="canva-text font-bold mb-3 text-slate-900"
+            >
+              Lưu trữ an toàn
+            </h3>
+            <p
+              data-template-id="feature-copy-two"
+              class="canva-text leading-7 text-slate-600"
+            >
+              Dữ liệu cá nhân được mã hóa và bảo vệ khỏi các truy cập trái phép.
+            </p>
+          </article>
+          <article
+            data-template-id="feature-card-three"
+            class="canva-card feature-card rounded-[1.75rem] p-7 reveal bg-white/90 shadow-lg"
+            style="transition-delay: 0.24s"
+          >
+            <div
+              data-template-id="feature-icon-three"
+              class="canva-container w-14 h-14 rounded-2xl flex items-center justify-center mb-7 bg-coral-100 text-[#d75a36]"
+            >
+              <i data-lucide="users-round" class="w-6 h-6"></i>
+            </div>
+            <p
+              data-template-id="feature-number-three"
+              class="canva-text text-sm font-semibold mb-3 text-slate-500"
+            >
+              3. Hỗ trợ cộng đồng
+            </p>
+            <h3
+              data-template-id="feature-title-three"
+              class="canva-text font-bold mb-3 text-slate-900"
+            >
+              Chia sẻ kiến thức
+            </h3>
+            <p
+              data-template-id="feature-copy-three"
+              class="canva-text leading-7 text-slate-600"
+            >
+              Cập nhật kiến thức bảo mật và hành động chung để nâng cao an toàn.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section
+        id="community"
+        class="w-full max-w-7xl mx-auto px-5 md:px-8 py-8 md:py-16"
+      >
+        <div
+          data-template-id="community-panel"
+          class="canva-panel rounded-[2.25rem] p-5 md:p-8 lg:p-10 bg-white/90 shadow-xl backdrop-blur"
+        >
+          <div
+            class="grid lg:grid-cols-[.95fr_1.05fr] gap-8 lg:gap-12 items-center"
+          >
+            <div class="reveal">
+              <div class="relative overflow-hidden rounded-[1.75rem]">
+                <img
+                  data-template-id="community-image"
+                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80"
+                  alt="Cộng đồng bảo mật"
+                  loading="lazy"
+                  class="canva-image w-full h-[360px] md:h-[500px] object-cover"
+                />
+              </div>
+            </div>
+            <div class="reveal" style="transition-delay: 0.14s">
+              <p
+                data-template-id="community-eyebrow"
+                class="canva-text uppercase tracking-[.2em] font-semibold mb-3 text-slate-600"
+              >
+                Cộng đồng
+              </p>
+              <h2
+                data-template-id="community-title"
+                class="canva-text script-font mb-5 text-4xl text-slate-900"
+              >
+                Hợp lực bảo vệ không gian mạng
+              </h2>
+              <p
+                data-template-id="community-copy"
+                class="canva-text leading-8 mb-7 text-slate-600"
+              >
+                Kết nối người dùng, chuyên gia và người quản trị để chia sẻ cảnh
+                báo, giải pháp và duy trì phong thái an toàn khi trực tuyến.
+              </p>
+              <div class="space-y-4">
+                <div class="flex gap-3 items-start">
+                  <div
+                    class="mt-1 w-7 h-7 rounded-full bg-white flex items-center justify-center shrink-0 shadow-sm"
+                  >
+                    <i data-lucide="check" class="w-4 h-4 text-[#4c8f79]"></i>
+                  </div>
+                  <p
+                    data-template-id="community-point-one"
+                    class="canva-text leading-7 text-slate-600"
+                  >
+                    Tham gia mạng lưới an toàn
+                  </p>
+                </div>
+                <div class="flex gap-3 items-start">
+                  <div
+                    class="mt-1 w-7 h-7 rounded-full bg-white flex items-center justify-center shrink-0 shadow-sm"
+                  >
+                    <i data-lucide="check" class="w-4 h-4 text-[#4c8f79]"></i>
+                  </div>
+                  <p
+                    data-template-id="community-point-two"
+                    class="canva-text leading-7 text-slate-600"
+                  >
+                    Nhận tin tức cảnh báo nhanh chóng
+                  </p>
+                </div>
+                <div class="flex gap-3 items-start">
+                  <div
+                    class="mt-1 w-7 h-7 rounded-full bg-white flex items-center justify-center shrink-0 shadow-sm"
+                  >
+                    <i data-lucide="check" class="w-4 h-4 text-[#4c8f79]"></i>
+                  </div>
+                  <p
+                    data-template-id="community-point-three"
+                    class="canva-text leading-7 text-slate-600"
+                  >
+                    Chia sẻ giải pháp và kỹ năng bảo mật
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="download"
+        class="w-full max-w-7xl mx-auto px-5 md:px-8 py-20"
+      >
+        <div
+          data-template-id="download-panel"
+          class="canva-banner rounded-[2.25rem] px-6 md:px-10 py-12 md:py-16 text-center relative overflow-hidden reveal bg-slate-950 text-white shadow-2xl"
+        >
+          <div
+            class="absolute -top-10 -left-10 w-32 h-32 rounded-full bg-white/10"
+          ></div>
+          <div
+            class="absolute -bottom-12 -right-10 w-40 h-40 rounded-full bg-white/10"
+          ></div>
+          <div class="relative max-w-3xl mx-auto">
+            <a herf="https://www.youtube.com/">
+              <p
+                data-template-id="download-eyebrow"
+                class="canva-text uppercase tracking-[.2em] font-semibold mb-4 text-cyan-200"
+              >
+                Tải ngay
+              </p>
+            </a>
+
+            <h2
+              data-template-id="download-title"
+              class="canva-text script-font mb-4 text-4xl text-white"
+            >
+              Bảo vệ ngay từ hôm nay
+            </h2>
+            <p
+              data-template-id="download-copy"
+              class="canva-text leading-8 mb-8 text-slate-200"
+            >
+              Cài đặt CyberGuard và bắt đầu hành trình bảo mật cho bạn, gia đình
+              và tổ chức chỉ trong vài bước.
+            </p>
+            <a
+              data-template-id="download-button"
+              href="https://www.youtube.com/"
+              class="canva-button focusable inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full font-semibold transition hover:-translate-y-1 bg-white text-slate-950"
+            >
+              <i data-lucide="download" class="w-5 h-5"></i>
+              <span>Bắt đầu ngay</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer data-template-id="footer-section" class="canva-footer w-full">
+      <div
+        class="max-w-7xl mx-auto px-5 md:px-8 py-8 flex flex-col md:flex-row gap-4 justify-between items-center text-sm text-slate-600"
+      >
+        <p
+          data-template-id="footer-copy"
+          class="canva-text text-center md:text-left"
+        >
+          © 2026 CyberGuard. Bảo mật không gian mạng cho mọi người.
+        </p>
+        <p
+          data-template-id="footer-note"
+          class="canva-text text-center md:text-right"
+        >
+          Kết nối, chia sẻ và bảo vệ cùng nhau.
+        </p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
